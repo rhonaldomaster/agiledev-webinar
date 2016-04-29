@@ -1,0 +1,49 @@
+/* Estilos aplicables en varios lugares */
+.p-l-s{padding-left: 15px;}
+.p-r-s{padding-right: 15px;}
+.p-t-s{padding-top: 15px;}
+.p-b-s{padding-bottom: 15px;}
+.m-t-s{margin-top: 15px;}
+.m-b-s{margin-bottom: 15px;}
+.p-l-m{padding-left: 30px;}
+.p-r-m{padding-right: 30px;}
+.p-t-m{padding-top: 30px;}
+.p-b-m{padding-bottom: 30px;}
+.m-t-m{margin-top: 30px;}
+.m-b-m{margin-bottom: 30px;}
+.pos-r{position: relative;}
+.pos-a{position: absolute;}
+.pad1{padding: 1rem;}
+.full-width{width: 100%;}
+.flex{display: flex;}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+.align-left{text-align: left;}
+.align-right{text-align: right;}
+.align-center{text-align: center;}
+.inline{display: inline;}
+.hidden{display: none;}
+.field-title{color: #2A5C5E;}
+.primarytext{color: #01D099;}
+.pull-left{float: left;}
+.pull-right{float: right;}
+.clearfix{clear: both;}
+.line-separator{
+  border-bottom: 1px solid #01D099;
+  height:1px;
+  margin: 0.5rem auto;
+  width: 80px;
+}
+.vertical-separator{
+  border-left:1px solid #CDCDCD;
+  display: inline;
+  margin: 0 1rem;
+}
+.centerdiv{
+  padding: 0 6rem;
+  text-align: center;
+  margin: 0 auto;
+  width: 70%;
+}
