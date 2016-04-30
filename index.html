@@ -2,9 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Koombea webinars</title>
     <link href="css/csswizardry.css" rel="stylesheet">
     <link href="css/common.css" rel="stylesheet">
+    <link href="css/icomoon.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
@@ -12,20 +14,20 @@
   <body>
     <div class="main">
       <div class="content">
-        <header class="main__header clearfix">
+        <header class="main__header">
           <div class="pull-left">
             <img src="img/koombea.png" class="logo"/>
             <div class="vertical-separator"></div>
             <div class="primarytext inline">Webinars</div>
           </div>
-          <div class="share-btn pull-right">
-            <span>.-.</span>
+          <div class="btn share-btn pull-right">
+            <span class="icon-share2"></span>
             Share
-            <span>y</span>
+            <span class="icon-ctrl"></span>
           </div>
         </header>
-        <section class="intro">
-          <div class="centerdiv">
+        <section class="intro clearfix">
+          <div class="centerdiv intro__header">
             <div class="line-separator"></div>
             <h1>How agile can save development costs</h1>
             <p class="">
@@ -38,14 +40,14 @@
           <div class="centerdiv pos-r">
             <div class="grid align-left">
               <div class="description__main align-left grid__item one-half">
-                <p>
-                  <img src="img/cal.png"/>
-                  <h2 class="field-title">Thursday, May 19, 2016</h2>
-                </p>
-                <p>
-                  <img src="img/clock.png"/>
-                  <h2 class="field-title">11am PT</h2>
-                </p>
+                <h2 class="field-title">
+                  <span class="icon-calendar primarytext"></span>
+                  Thursday, May 19, 2016
+                </h2>
+                <h2 class="field-title">
+                  <span class="icon-alarm primarytext"></span>
+                  11am PT
+                </h2>
                 <p>
                   bla bla bla
                 </p>
@@ -73,11 +75,11 @@
                 <div class="m-t-s">
                   <label class="field-title">Have you ever built an app?</label>
                 </div>
-                <div class="m-t-s">
+                <div class="m-t-s radio">
                   <input type="radio" id="appyes" name="appbuilt">
-                  <label for="appyes">Yes</label>
-                  <input type="radio" id="appno" name="appbuilt">
-                  <label for="appno">No</label>
+                  <label for="appyes" class="ilabel">Yes</label>
+                  <input type="radio" id="appno" name="appbuilt" checked>
+                  <label for="appno" class="ilabel">No</label>
                 </div>
                 <button type="button" class="btn btn-primary full-width m-t-s">Save my seat</button>
               </form>
@@ -92,7 +94,7 @@
               <div class="grid__item one-half">
                 <div class="grid">
                   <div class="grid__item one-fifth">
-                    <img src="img/guest1.png" class="img-circle"/>
+                    <img src="http://placehold.it/80x80" class="img-circle"/>
                   </div><!--
                   --><div class="grid__item four-fifths">
                     <p>
@@ -103,8 +105,8 @@
                       bla bla bla
                     </p>
                     <p>
-                      <a href="#">in</a>
-                      <a href="#">tw</a>
+                      <a href="#"><span class="icon-linkedin2"></span></a>
+                      <a href="#"><span class="icon-twitter"></span></a>
                     </p>
                   </div>
                 </div>
@@ -112,7 +114,7 @@
               --><div class="grid__item one-half">
                 <div class="grid">
                   <div class="grid__item one-fifth">
-                    <img src="img/guest1.png" class="img-circle"/>
+                    <img src="http://placehold.it/80x80" class="img-circle"/>
                   </div><!--
                   --><div class="grid__item four-fifths">
                     <p>
@@ -123,8 +125,8 @@
                       bla bla bla
                     </p>
                     <p>
-                      <a href="#">in</a>
-                      <a href="#">tw</a>
+                      <a href="#"><span class="icon-linkedin2"></span></a>
+                      <a href="#"><span class="icon-twitter"></span></a>
                     </p>
                   </div>
                 </div>
@@ -134,7 +136,7 @@
               <div class="grid__item one-half">
                 <div class="grid">
                   <div class="grid__item one-fifth">
-                    <img src="img/guest1.png" class="img-circle"/>
+                    <img src="http://placehold.it/80x80" class="img-circle"/>
                   </div><!--
                   --><div class="grid__item four-fifths">
                     <p>
@@ -145,8 +147,8 @@
                       bla bla bla
                     </p>
                     <p>
-                      <a href="#">in</a>
-                      <a href="#">tw</a>
+                      <a href="#"><span class="icon-linkedin2"></span></a>
+                      <a href="#"><span class="icon-twitter"></span></a>
                     </p>
                   </div>
                 </div>
@@ -154,7 +156,7 @@
               --><div class="grid__item one-half">
                 <div class="grid">
                   <div class="grid__item one-fifth">
-                    <img src="img/guest1.png" class="img-circle"/>
+                    <img src="http://placehold.it/80x80" class="img-circle"/>
                   </div><!--
                   --><div class="grid__item four-fifths">
                     <p>
@@ -165,8 +167,8 @@
                       bla bla bla
                     </p>
                     <p>
-                      <a href="#">in</a>
-                      <a href="#">tw</a>
+                      <a href="#"><span class="icon-linkedin2"></span></a>
+                      <a href="#"><span class="icon-twitter"></span></a>
                     </p>
                   </div>
                 </div>
@@ -178,14 +180,16 @@
           <div class="centerdiv">
             <h1>What People Have Said About Our Previous Webinars</h1>
             <div class="line-separator"></div>
-            <img src="img/quotes-up.png"/>
+            <div class="align-left">
+              <span class="icon-quotes-left primarytext"></span>
+            </div>
             <div class="grid align-left">
               <div class="grid__item one-third">
                 <p>
                   Most useful webinar I have ever attended. Thank you! <span class="primarytext">@koombea #webinar</span>
                 </p>
                 <div class="">
-                  <img src="img/user.png" class="img-circle"/>
+                  <img src="http://placehold.it/40x40" class="img-circle"/>
                   <span class="field-title">@bobcrowe</span>
                 </div>
               </div><!--
@@ -194,7 +198,7 @@
                   Most useful webinar I have ever attended. Thank you! <span class="primarytext">@koombea #webinar</span>
                 </p>
                 <div class="">
-                  <img src="img/user.png" class="img-circle"/>
+                  <img src="http://placehold.it/40x40" class="img-circle"/>
                   <span class="field-title">@bobcrowe</span>
                 </div>
               </div><!--
@@ -203,23 +207,25 @@
                   Most useful webinar I have ever attended. Thank you! <span class="primarytext">@koombea #webinar</span>
                 </p>
                 <div class="">
-                  <img src="img/user.png" class="img-circle"/>
+                  <img src="http://placehold.it/40x40" class="img-circle"/>
                   <span class="field-title">@bobcrowe</span>
                 </div>
               </div>
             </div>
-            <img src="img/quotes-down.png"/>
+            <div class="align-right">
+              <span class="icon-quotes-right primarytext"></span>
+            </div>
           </div>
         </section>
         <section class="share pad1">
           <div class="share__main">
             <div class="centerdiv">
               <b>Share this webinar</b>
-              <span>f</span>
-              <span>tw</span>
-              <span>in</span>
-              <span>g+</span>
-              <span>http://koom.be/f7fjj563</span>
+              <span class="icon-facebook2 primarytext"></span>
+              <span class="icon-twitter primarytext"></span>
+              <span class="icon-linkedin primarytext"></span>
+              <span class="icon-google-plus primarytext"></span>
+              <span class="btn">http://koom.be/f7fjj563</span>
             </div>
           </div>
         </section>

@@ -58,3 +58,11 @@
   background-color: #01D099;
   color: #FFFFFF;
 }
+.rotate-vertical{
+  -ms-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+.img-circle{border-radius: 100%;}

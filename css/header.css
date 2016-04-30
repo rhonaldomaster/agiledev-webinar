@@ -1,7 +1,12 @@
 .main__header{
-  /*background: rgba(0,0,0,.5);*/
   color: #FFFFFF;
   font-size: 1.5rem;
   padding: 1rem;
+  position: absolute;
+  width: 97%;
 }
 .logo{vertical-align: bottom;}
+.share-btn{
+  background-color: transparent;
+  border: 1px solid;
+}
