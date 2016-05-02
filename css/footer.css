@@ -18,3 +18,8 @@
 .footer__signature{
   padding: 2rem 0;
 }
+@media screen and (max-width: 768px) {
+  .footer__nav,.footer__products{
+    display: none;
+  }
+}
