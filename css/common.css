@@ -11,6 +11,8 @@
 .p-b-m{padding-bottom: 30px;}
 .m-t-m{margin-top: 30px;}
 .m-b-m{margin-bottom: 30px;}
+.m-t-l{margin-top: 45px;}
+.m-b-l{margin-bottom: 45px;}
 .pos-r{position: relative;}
 .pos-a{position: absolute;}
 .pad1{padding: 1rem;}
@@ -66,3 +68,4 @@
   transform: rotate(-180deg);
 }
 .img-circle{border-radius: 100%;}
+.even{background-color: #FAFAFA;}
