@@ -10,3 +10,8 @@
   background-color: transparent;
   border: 1px solid;
 }
+.intro__header{margin-top: 6rem;}
+.intro__header-text{
+  margin: 0 auto;
+  width: 60%;
+}
