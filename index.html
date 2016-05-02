@@ -2,7 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
     <title>Koombea webinars</title>
     <link href="css/csswizardry.css" rel="stylesheet">
     <link href="css/icomoon.css" rel="stylesheet">
@@ -16,15 +19,17 @@
       <div class="content">
         <header class="main__header">
           <div class="pull-left">
-            <img src="img/koombea.png" class="logo"/>
+            <img src="img/logo.png" class="logo"/>
             <div class="vertical-separator"></div>
             <div class="primarytext inline">Webinars</div>
           </div>
-          <div class="btn share-btn pull-right">
+          <a href="#share" class="btn share-btn pull-right">
             <span class="icon-share2"></span>
             Share
-            <span class="icon-ctrl"></span>
-          </div>
+            <div class="inline-block rotate180">
+              <span class="icon-ctrl"></span>
+            </div>
+          </a>
         </header>
         <section class="intro clearfix">
           <div class="centerdiv intro__header">
@@ -38,8 +43,8 @@
         <section class="description even pad1">
           <h1 class="hidden">Webinar description</h1>
           <div class="centerdiv pos-r">
-            <div class="grid align-left">
-              <div class="description__main align-left grid__item one-half">
+            <div class="grid grid--full align-left">
+              <div class="description__main align-left grid__item desk--one-half">
                 <h2 class="field-title">
                   <span class="icon-calendar primarytext"></span>
                   Thursday, May 19, 2016
@@ -88,17 +93,17 @@
             </div>
           </div>
         </section>
-        <section class="about-guests pad1">
+        <section class="about-guests">
           <div class="centerdiv">
             <h1 class="m-t-xl section-header">About our guests</h1>
             <div class="line-separator"></div>
-            <div class="grid align-left m-t-xl">
-              <div class="grid__item one-half">
-                <div class="grid">
-                  <div class="grid__item one-fifth">
-                    <img src="http://placehold.it/80x80" class="img-circle img-guests"/>
+            <div class="grid grid--full align-left m-t-xl">
+              <div class="grid__item desk--one-half">
+                <div class="grid grid--full">
+                  <div class="grid__item one-quarter">
+                    <img src="img/guest1.png" class="img-circle img-guests"/>
                   </div><!--
-                  --><div class="grid__item four-fifths">
+                  --><div class="grid__item three-quarters">
                     <div class="m-t-m">
                       <div class="semibold">DANIEL GONZALEZ</div>
                       <div class="primarytext">Director of Operations at Koombea</div>
@@ -113,12 +118,12 @@
                   </div>
                 </div>
               </div><!--
-              --><div class="grid__item one-half">
-                <div class="grid">
-                  <div class="grid__item one-fifth">
-                    <img src="http://placehold.it/80x80" class="img-circle img-guests"/>
+              --><div class="grid__item desk--one-half">
+                <div class="grid grid--full">
+                  <div class="grid__item one-quarter">
+                    <img src="img/guest2.png" class="img-circle img-guests"/>
                   </div><!--
-                  --><div class="grid__item four-fifths">
+                  --><div class="grid__item three-quarters">
                     <div class="m-t-m">
                       <div class="semibold">LOLA STONE</div>
                       <div class="primarytext">Project Manager at Koombea</div>
@@ -134,13 +139,13 @@
                 </div>
               </div>
             </div>
-            <div class="grid align-left m-t-m">
-              <div class="grid__item one-half">
-                <div class="grid">
-                  <div class="grid__item one-fifth">
-                    <img src="http://placehold.it/80x80" class="img-circle img-guests"/>
+            <div class="grid grid--full align-left m-t-m">
+              <div class="grid__item desk--one-half">
+                <div class="grid grid--full">
+                  <div class="grid__item one-quarter">
+                    <img src="img/guest3.png" class="img-circle img-guests"/>
                   </div><!--
-                  --><div class="grid__item four-fifths">
+                  --><div class="grid__item three-quarters">
                     <div class="m-t-m">
                       <div class="semibold">SAM WOOD</div>
                       <div class="primarytext">Back-end developer at Unity</div>
@@ -155,12 +160,12 @@
                   </div>
                 </div>
               </div><!--
-              --><div class="grid__item one-half">
-                <div class="grid">
-                  <div class="grid__item one-fifth">
-                    <img src="http://placehold.it/80x80" class="img-circle img-guests"/>
+              --><div class="grid__item desk--one-half">
+                <div class="grid grid--full">
+                  <div class="grid__item one-quarter">
+                    <img src="img/guest4.png" class="img-circle img-guests"/>
                   </div><!--
-                  --><div class="grid__item four-fifths">
+                  --><div class="grid__item three-quarters">
                     <div class="m-t-m">
                       <div class="semibold">TINA WALKER</div>
                       <div class="primarytext">Mobile Product Manager at Trello</div>
@@ -185,8 +190,8 @@
             <div class="align-left m-t-l">
               <span class="icon-quotes-left primarytext text-large"></span>
             </div>
-            <div class="grid align-left m-t-m flex">
-              <div class="grid__item one-third flex-column people-says">
+            <div class="grid align-left m-t-m ">
+              <div class="grid__item desk--one-third people-says">
                 <div class="people-says__content">
                   <div class="m-t-s people-says__content-text">
                     Most useful webinar I have ever attended. Thank you!
@@ -194,12 +199,12 @@
                     <span class="primarytext">#webinar</span>
                   </div>
                   <div class="people-says__content-signature m-t-m border-top-gray p-t-s">
-                    <img src="http://placehold.it/40x40" class="img-circle"/>
+                    <img src="img/people1.png" class="img-circle img-people"/>
                     <span class="field-title bold">@bobcrowe</span>
                   </div>
                 </div>
               </div><!--
-              --><div class="grid__item one-third flex-column people-says">
+              --><div class="grid__item desk--one-third  people-says">
                 <div class="people-says__content">
                   <div class="m-t-s people-says__content-text">
                     I'm not kidding when i say this is the most fun I've ever had on a webiar
@@ -207,12 +212,12 @@
                     <span class="primarytext">#startups</span>
                   </div>
                   <div class="people-says__content-signature m-t-m border-top-gray p-t-s">
-                    <img src="http://placehold.it/40x40" class="img-circle"/>
+                    <img src="img/people2.png" class="img-circle img-people"/>
                     <span class="field-title bold">@mariaschmidt</span>
                   </div>
                 </div>
               </div><!--
-              --><div class="grid__item one-third flex-column people-says">
+              --><div class="grid__item desk--one-third  people-says">
                 <div class="people-says__content">
                   <div class="m-t-s people-says__content-text">
                     Excited for another <span class="primarytext">#webinar</span>
@@ -220,7 +225,7 @@
                     info packed into webinars <span class="primarytext">#agile #rocket</span>
                   </div>
                   <div class="people-says__content-signature m-t-m border-top-gray p-t-s">
-                    <img src="http://placehold.it/40x40" class="img-circle img-people"/>
+                    <img src="img/people3.png" class="img-circle img-people img-people"/>
                     <span class="field-title bold">@tommywilliams</span>
                   </div>
                 </div>
@@ -231,26 +236,112 @@
             </div>
           </div>
         </section>
-        <section class="share pad1">
+        <section id="share" class="share pad1">
           <div class="share__main">
             <div class="centerdiv">
               <div class="inline m-r-s bold">Share this webinar</div>
-              <div class="circular-char gray-text">
-                <span class="icon-facebook"></span>
-              </div>
-              <div class="circular-char gray-text">
-                <span class="icon-twitter"></span>
-              </div>
-              <div class="circular-char gray-text">
-                <span class="icon-linkedin2"></span>
-              </div>
-              <div class="circular-char gray-text">
-                <span class="icon-google-plus"></span>
-              </div>
+              <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//koom.be/f7fjj563" class="circular-char gray-text icon-facebook"></a>
+              <a href="https://twitter.com/home?status=http%3A//koom.be/f7fjj563" class="circular-char gray-text icon-twitter"></a>
+              <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//koom.be/f7fjj563&title=&summary=&source=" class="circular-char gray-text icon-linkedin2"></a>
+              <a href="https://plus.google.com/share?url=http%3A//koom.be/f7fjj563" class="circular-char gray-text icon-google-plus"></a>
               <input type="text" class="btn border-full-gray inline gray-text" value="http://koom.be/f7fjj563">
             </div>
           </div>
         </section>
+        <footer class="footer">
+          <nav class="footer__nav grid">
+            <div class="grid__item one-fifth align-left">
+              KOOMBEA
+              <div class="m-t-m">
+                <div class="m-t-s">
+                  <a href="https://koombea.com/startups/">Services</a>
+                </div>
+                <div class="m-t-s">
+                  <a href="https://koombea.com/enterprise/">Enterprise</a>
+                </div>
+                <div class="m-t-s">
+                  <a href="https://koombea.com/work/">Work</a>
+                </div>
+                <div class="m-t-s">
+                  <a href="https://koombea.com/about/">About</a>
+                </div>
+              </div>
+            </div><!--
+            --><div class="grid__item one-fifth align-left">
+              COMPANY
+              <div class="m-t-m">
+                <div class="m-t-s">
+                  <a href="https://koombea.com/about/#team">Leadership Team</a>
+                </div>
+                <div class="m-t-s">
+                  <a href="https://koombea.com/about/">About</a>
+                </div>
+                <div class="m-t-s">
+                  <a href="#">Koombea Shop</a>
+                </div>
+                <div class="m-t-s">
+                  <a href="https://koombea.com/about/#products">Koombea Products</a>
+                </div>
+                <div class="m-t-s">
+                  <a href="#">Open Source</a>
+                </div>
+                <div class="m-t-s">
+                  <a href="https://koombea.com/blog">Blog</a>
+                </div>
+              </div>
+            </div><!--
+            --><div class="grid__item one-fifth align-left">
+              MORE LINKS
+              <div class="m-t-m">
+                <div class="m-t-s">
+                  <a href="#">FAQ</a>
+                </div>
+                <div class="m-t-s">
+                  <a href="#">Resources</a>
+                </div>
+                <div class="m-t-s">
+                  <a href="#">Careers</a>
+                </div>
+                <div class="m-t-s">
+                  <a href="#">Privacy policy</a>
+                </div>
+              </div>
+            </div><!--
+            --><div class="grid__item one-fifth align-left">
+              GET IN TOUCH
+              <div class="m-t-m">
+                <div class="m-t-s">
+                  <a href="#">Contact us</a>
+                </div>
+                <div class="m-t-s">
+                  <a href="#">Subscribe</a>
+                </div>
+              </div>
+            </div><!--
+            --><div class="grid__item one-fifth align-left">
+              SOCIAL
+              <div class="m-t-m">
+                <a href="https://www.facebook.com/koombea" class="circular-char gray-text icon-facebook"></a>
+                <a href="https://twitter.com/koombea" class="circular-char gray-text icon-twitter"></a>
+                <a href="https://www.linkedin.com/company/koombea" class="circular-char gray-text icon-linkedin2"></a>
+                <a href="http://instagram.com/koombea" class="circular-char gray-text icon-instagram"></a>
+              </div>
+            </div>
+          </nav>
+          <div class="footer__products">
+            <div class="m-b-m align-left">
+              KOOMBEA PRODUCTS
+            </div>
+            <a href="http://www.rilo.co/"><img src="img/rilo.png" alt="rilo"/></a>
+            <a href="https://www.convergely.com/"><img src="img/convergely.png" alt="convergely"/></a>
+            <a href="http://www.saasler.com/"><img src="img/saasler.png" alt="saasler"/></a>
+            <a href="http://www.dashable.com/"><img src="img/dashable.png" alt="dashable"/></a>
+            <a href="https://railskits.com/"><img src="img/railskits.png" alt="railskits"/></a>
+          </div>
+          <div class="footer__signature border-top-gray p-t-m">
+            &copy; 2007-2016 Koombea Inc. All rights Reserved
+          </div>
+        </footer>
       </div>
     </div>
   </body>

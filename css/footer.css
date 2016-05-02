@@ -1,0 +1,20 @@
+.footer{
+  background-color: #002123;
+  background-image: url('img/footerbg.png');
+  color: #FFFFFF;
+  font-size: 12px;
+  padding-top: 2rem;
+}
+.footer{
+  background-image: url('../img/footerbg.png');
+}
+.footer__nav,.footer__products,.footer__signature{
+  margin: 0 auto;
+  padding: 1rem 0;
+  text-align: center;
+  width: 70%;
+}
+.footer__nav a{color: #FFFFFF;}
+.footer__signature{
+  padding: 2rem 0;
+}

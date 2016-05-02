@@ -5,13 +5,19 @@
   position: absolute;
   width: 97%;
 }
-.logo{vertical-align: bottom;}
+.logo{vertical-align: sub;}
 .share-btn{
   background-color: transparent;
   border: 1px solid;
+  color: #FFFFFF;
 }
 .intro__header{margin-top: 6rem;}
 .intro__header-text{
   margin: 0 auto;
   width: 60%;
+}
+@media screen and (max-width: 600px) {
+  .share-btn{
+    display: none;
+  }
 }
