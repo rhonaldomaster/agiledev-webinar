@@ -240,11 +240,11 @@
           <div class="share__main">
             <div class="centerdiv">
               <div class="inline m-r-s bold">Share this webinar</div>
-              <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//koom.be/f7fjj563" class="circular-char gray-text icon-facebook"></a>
-              <a href="https://twitter.com/home?status=http%3A//koom.be/f7fjj563" class="circular-char gray-text icon-twitter"></a>
-              <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//koom.be/f7fjj563&title=&summary=&source=" class="circular-char gray-text icon-linkedin2"></a>
-              <a href="https://plus.google.com/share?url=http%3A//koom.be/f7fjj563" class="circular-char gray-text icon-google-plus"></a>
-              <input type="text" class="btn border-full-gray inline gray-text" value="http://koom.be/f7fjj563">
+              <a href="#" class="circular-char gray-text icon-facebook js-share-fb"></a>
+              <a href="#" class="circular-char gray-text icon-twitter js-share-tw"></a>
+              <a href="#" class="circular-char gray-text icon-linkedin2 js-share-in"></a>
+              <a href="#" class="circular-char gray-text icon-google-plus js-share-gp"></a>
+              <input type="text" class="btn border-full-gray inline gray-text js-url" value="">
             </div>
           </div>
         </section>
@@ -344,5 +344,13 @@
         </footer>
       </div>
     </div>
+    <script>
+      var url = document.URL;
+      document.querySelector('.js-url').value = url;
+      document.querySelector('.js-share-fb').href = "https://www.facebook.com/sharer/sharer.php?u="+(encodeURIComponent(url));
+      document.querySelector('.js-share-tw').href = "https://twitter.com/home?status="+(encodeURIComponent(url));
+      document.querySelector('.js-share-in').href = "https://www.linkedin.com/shareArticle?mini=true&url="+(encodeURIComponent(url));
+      document.querySelector('.js-share-gp').href = "https://plus.google.com/share?url="+(encodeURIComponent(url));
+    </script>
   </body>
 </html>
